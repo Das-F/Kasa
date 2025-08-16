@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Heading from "./Heading.jsx";
+import Heading from "../Heading.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
