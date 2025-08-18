@@ -1,5 +1,5 @@
 import "./Heading.css";
-export default function Heading() {
+function Heading() {
   return (
     <header className="heading">
       <img className="logo-header" src="./src/assets/Logo-header.svg" alt="Kasa" />
@@ -22,3 +22,4 @@ export default function Heading() {
     </header>
   );
 }
+export default Heading;

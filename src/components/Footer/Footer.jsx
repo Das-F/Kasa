@@ -1,9 +1,10 @@
 import "./Footer.css";
-export default function Footer() {
+function Footer() {
   return (
     <footer className="footer">
-      <img src="./src/assets/Logo-footer.png" alt="Kasa" />
+      <img src="./src/assets/Logo-footer.svg" alt="Kasa" />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }
+export default Footer;
