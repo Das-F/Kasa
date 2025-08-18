@@ -2,3 +2,36 @@
   justify-content: center;
   background-color: #0000ff;
 }
+.logo-header {
+  max-width: 130px;
+  height: auto;
+  margin: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+.heading h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
