@@ -1,8 +1,9 @@
-import "./Heading.css";
-function Heading() {
+import "./Header.css";
+import Logo from "../Logo/Logo.jsx";
+function Header() {
   return (
-    <header className="heading">
-      <img className="logo-header" src="./src/assets/Logo-header.svg" alt="Kasa" />
+    <header className="header">
+      <Logo className="logo-header" alt="Kasa" fillColor="#FF6060" />
       <nav className="nav">
         <ul>
           <li>
@@ -18,8 +19,8 @@ function Heading() {
         </ul>
       </nav>
 
-      <h1 className="heading-title">Chez vous, partout et ailleurs</h1>
+      <h1 className="header-title">Chez vous, partout et ailleurs</h1>
     </header>
   );
 }
-export default Heading;
+export default Header;

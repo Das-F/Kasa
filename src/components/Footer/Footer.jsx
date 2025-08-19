@@ -1,8 +1,9 @@
 import "./Footer.css";
+import Logo from "../Logo/Logo.jsx";
 function Footer() {
   return (
     <footer className="footer">
-      <img src="./src/assets/Logo-footer.svg" alt="Kasa" />
+      <Logo className="logo-footer" fillColor="#FFFFFF" />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
