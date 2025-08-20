@@ -1,21 +1,22 @@
 .footer {
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-width: 320px;
   height: 200px;
   background-color: #000000;
 }
 
-.footer img {
+.logo-footer {
   max-width: 120px;
   height: auto;
   margin: 10px;
 }
 
-.footer p {
+.footer > p {
   max-width: 120px;
-  display: flex;
+  margin: 0 auto;
   font-size: 14px;
   color: #ffffff;
-  flex-wrap: wrap;
 }
