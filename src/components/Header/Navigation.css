@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style: none;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ul {
+  margin: 0 10px;
+}
+
+.a:selected {
+  text-decoration: underline;
+}

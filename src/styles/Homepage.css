@@ -1,0 +1,14 @@
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
