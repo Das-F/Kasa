@@ -5,14 +5,10 @@ function Navigation({ currentPage, setCurrentPage }) {
     <nav className="nav">
       <ul>
         <li>
-          <a className={currentPage === "home" ? "home selected" : "home"} onClick={() => setCurrentPage("home")}>
-            Accueil
-          </a>
+          <a className="home">Accueil</a>
         </li>
         <li>
-          <a className={currentPage === "about" ? "about selected" : "about"} onClick={() => setCurrentPage("about")}>
-            À propos
-          </a>
+          <a className="about">À propos</a>
         </li>
       </ul>
     </nav>

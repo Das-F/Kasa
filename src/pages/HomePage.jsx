@@ -1,4 +1,4 @@
-import "./styles/Homepage.css";
+import "../styles/Homepage.css";
 import Header from "../components/Header/Header.jsx";
 
 function HomePage() {
