@@ -6,9 +6,9 @@ function AboutPage() {
   return (
     <>
       <Header />
-      <div className="not-found">
-        <h1>404 - Not Found</h1>
-        <p>Sorry, the page you are looking for does not exist.</p>
+      <div className="about">
+        <h1>À propos</h1>
+        <p>Bienvenue sur la page à propos de notre site.</p>
       </div>
       <Footer />
     </>

@@ -1,9 +1,20 @@
 .not-found {
-  color: var(--color-1);
+  color: #ff6060;
 }
 
 h1 {
   font-size: 96px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+.return-home a {
+  text-decoration: none;
+  color: #000;
+}
+
+.return-home a:hover,
+.return-home a:focus,
+.return-home a:active {
+  text-decoration: underline;
+  color: #000;
 }

@@ -11,9 +11,7 @@ function NotFoundPage() {
         <p>Oups! La page que vous demandez n'existe pas</p>
       </div>
       <div className="return-home">
-        <p>
-          <a href="/">Retourner sur la page d'accueil</a>
-        </p>
+        <a href="/">Retourner sur la page d'accueil</a>
       </div>
       <Footer />
     </>
