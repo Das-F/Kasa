@@ -3,15 +3,17 @@ import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("home");
   return (
-    <>
-      <Header />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
       <div className="card"></div>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 export default App;

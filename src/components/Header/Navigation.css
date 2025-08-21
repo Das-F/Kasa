@@ -1,21 +1,31 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
   margin: 10px 0;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
 
-.a {
-  margin: 0 10px;
+.nav ul {
+  display: flex;
   list-style: none;
-  text-color: #000;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.a:selected {
+.nav li {
+  margin: 0 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.nav a:active {
   text-decoration: underline;
 }

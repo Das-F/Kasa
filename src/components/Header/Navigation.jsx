@@ -1,6 +1,6 @@
 import "./Navigation.css";
 
-function Navigation({ currentPage, setCurrentPage }) {
+function Navigation() {
   return (
     <nav className="nav">
       <ul>
