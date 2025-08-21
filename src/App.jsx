@@ -10,15 +10,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <div className="card">
+      <>
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/nfp" element={<NotFoundPage />} />
         </Routes>
-      </div>
-      <Footer />
+        <Footer />
+        <div className="card"></div>
+      </>
     </BrowserRouter>
   );
 }
