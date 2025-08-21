@@ -5,7 +5,7 @@ import Navigation from "./Navigation.jsx";
 function Header() {
   return (
     <header className="header">
-      <Logo className="logo-header" alt="Kasa" fillColor="#FF6060" />
+      <Logo className="logo-header" alt="Kasa" fillColor="var(--color-1)" />
       <Navigation />
     </header>
   );
