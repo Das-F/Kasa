@@ -17,8 +17,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/nfp" element={<NotFoundPage />} />
         </Routes>
-        <Footer />
         <div className="card"></div>
+        <Footer />
       </>
     </BrowserRouter>
   );

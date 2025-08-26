@@ -2,13 +2,25 @@
   color: #ff6060;
 }
 
-h1 {
-  font-size: 96px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.code-error {
+  margin: 80px 20px;
+  width: 190px;
+  height: 90px;
 }
+
+h1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 20px;
+}
+
+.return-home {
+  margin: 60px 10px 60px 10px;
+}
+
 .return-home a {
-  text-decoration: none;
+  font-size: 14px;
+  text-decoration: underline;
   color: #000;
 }
 
@@ -17,4 +29,10 @@ h1 {
 .return-home a:active {
   text-decoration: underline;
   color: #000;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  min-width: 250px;
 }
