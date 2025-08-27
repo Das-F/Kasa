@@ -1,22 +1,22 @@
 .banner {
   position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-width: 270px;
   margin-bottom: 20px;
 }
 
 .banner-image {
-  width: 100%;
+  min-width: 270px;
   height: 110px;
-  display: block;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .banner::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  min-width: 270px;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
@@ -26,13 +26,23 @@
 .banner-title {
   position: absolute;
   top: 30px;
-  left: 20px;
+  left: 35px;
   font-size: 24px;
   font-weight: 700;
+  line-height: 25px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   width: 210px;
   margin: 0;
   text-align: left;
+  align-items: center;
   z-index: 2;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
 }
