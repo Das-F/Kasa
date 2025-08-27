@@ -3,13 +3,13 @@
 }
 
 .code-error {
-  margin: 80px 20px;
+  margin: 50px 20px;
   width: 190px;
   height: 90px;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 20px 20px;
 }
@@ -33,6 +33,6 @@ h1 {
 p {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 20px 0px;
   min-width: 250px;
 }
