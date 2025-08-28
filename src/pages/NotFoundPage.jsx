@@ -15,7 +15,7 @@ function NotFoundPage() {
         </h1>
       </div>
       <div className="return-home">
-        <a href="/">Retourner sur la page d'accueil</a>
+        <Link to="/">Retourner sur la page d'accueil</Link>
       </div>
       <Footer />
     </>

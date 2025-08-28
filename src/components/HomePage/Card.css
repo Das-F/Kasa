@@ -1,6 +1,18 @@
 .card {
-  width: 210px;
-  height: 150px;
+  width: 270px;
+  height: 200px;
   border-radius: 10px;
-  background-color: #ff6060;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
+  background: linear-gradient(to bottom, #ff6060 60%, #040404 167%);
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 8px;
 }

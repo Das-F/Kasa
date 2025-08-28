@@ -1,42 +1,37 @@
 .banner {
   position: relative;
   display: flex;
-  justify-content: center;
-  min-width: 270px;
-  margin-bottom: 20px;
-}
-
-.banner-image {
-  min-width: 270px;
-  height: 110px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  max-width: 1240px;
+  height: 100px;
+  margin: 20px auto;
   border-radius: 10px;
-  object-fit: cover;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner::after {
   content: "";
   position: absolute;
-  min-width: 270px;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
   z-index: 1;
 }
 
 .banner-title {
-  position: absolute;
-  top: 30px;
-  left: 35px;
-  font-size: 24px;
+  position: relative;
+  z-index: 2;
+  margin: 20px;
+  max-width: 300px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 1;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  width: 210px;
-  margin: 0;
   text-align: left;
-  align-items: center;
-  z-index: 2;
 }
 
 .cards-list {
