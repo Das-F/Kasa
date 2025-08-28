@@ -2,6 +2,7 @@ import "../styles/Homepage.css";
 import Header from "../components/Header/Header.jsx";
 import Card from "../components/HomePage/Card.jsx";
 import Footer from "../components/Footer/Footer.jsx";
+import Announces from "../components/HomePage/Announces.jsx";
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
           <br /> partout et ailleurs
         </h1>
       </div>
+      <Announces />
       <div className="cards-list">
         <Card />
         <Card />
