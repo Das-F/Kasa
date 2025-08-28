@@ -1,18 +1,37 @@
-.card {
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.announce-card {
   width: 270px;
   height: 200px;
   border-radius: 10px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column;
   padding: 10px;
   background: linear-gradient(to bottom, #ff6060 60%, #040404 167%);
 }
 
-h2 {
+.announce-cover {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 8px;
+  margin: 8px;
+  width: 90%;
+  display: block;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
