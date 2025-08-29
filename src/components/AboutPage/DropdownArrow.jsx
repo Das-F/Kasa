@@ -1,6 +1,6 @@
 import "./DropdownArrow.css";
 
 function Arrow() {
-  return <img src="/public/images/Vector.svg" alt="Arrow icon" className="dropdown-arrow" />;
+  return <img src="/images/Vector.svg" alt="déplier le menu" className="dropdown-arrow" />;
 }
 export default Arrow;

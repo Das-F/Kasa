@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
 function Card() {
@@ -10,10 +11,12 @@ function Card() {
   return (
     <div className="card-list">
       {data.map((announce) => (
-        <div key={announce.id} className="announce-card">
-          <img src={announce.cover} alt={announce.title} className="announce-cover" />
-          <h3 className="card-title">{announce.title}</h3>
-        </div>
+        <Link to={`/rental/${announce.id}`} key={announce.id} className="card-link">
+          <div className="card-announce">
+            <img src={announce.cover} alt={announce.title} className="card-cover" />
+            <h3 className="card-title">{announce.title}</h3>
+          </div>
+        </Link>
       ))}
     </div>
   );
