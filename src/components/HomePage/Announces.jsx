@@ -19,17 +19,20 @@ const Announces = () => {
               <h3 className="announce-title">{announce.title}</h3>
               <p className="announce-location">{announce.location}</p>
               <p className="announce-description">{announce.description}</p>
+              <p className="announce-tags">
+                <strong>Tags :</strong> {announce.tags.join(", ")}
+              </p>
+              <div className="announce-rating-host">
+                <p className="announce-rating">
+                  <strong>Note :</strong> {announce.rating}
+                </p>
 
-              <div className="announce-host">
                 <span className="announce-host-name">{announce.host.name}</span>
               </div>
 
               <div className="announce-infos">
                 <p className="announce-equipments">
                   <strong>Équipements :</strong> {announce.equipments.join(", ")}
-                </p>
-                <p className="announce-tags">
-                  <strong>Tags :</strong> {announce.tags.join(", ")}
                 </p>
               </div>
             </div>
