@@ -1,19 +1,35 @@
 import "./Announces.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import NotFoundPage from "../../pages/NotFoundPage";
 
 const Announces = () => {
-  const [data, setData] = useState([]);
+  const [logementData, setlogementData] = useState([]);
+  const [loader, setLoader] = useState(true);
+  const { id } = useParams();
   useEffect(() => {
-    axios.get("/announces.json").then((response) => setData(response.data));
+    axios.get("/announces.json").then((response) => {
+      setlogementData(response.data);
+      setLoader(false);
+    });
   }, []);
+
+  const announce = logementData?.find((a) => a.id === id);
+
+  if (loader) {
+    return <div>Loading...</div>;
+  }
+
+  if (logementData.length > 0 && !announce) {
+    return <NotFoundPage />;
+  }
 
   return (
     <div className="announces">
       <div className="announces-list">
-        {data.map((announce) => (
-          <Link to={`/rental/${announce.id}`} key={announce.id} className="announce-card-link">
+        {announce && (
+          <div className="announce-card-link">
             <div className="announce-card">
               <img src={announce.cover} alt={announce.title} className="announce-cover" />
               <h3 className="announce-title">{announce.title}</h3>
@@ -26,21 +42,18 @@ const Announces = () => {
                 <p className="announce-rating">
                   <strong>Note :</strong> {announce.rating}
                 </p>
-
                 <span className="announce-host-name">{announce.host.name}</span>
               </div>
-
               <div className="announce-infos">
                 <p className="announce-equipments">
                   <strong>Équipements :</strong> {announce.equipments.join(", ")}
                 </p>
               </div>
             </div>
-          </Link>
-        ))}
+          </div>
+        )}
       </div>
     </div>
   );
 };
-
 export default Announces;
