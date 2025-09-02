@@ -6,7 +6,7 @@ import "./Card.css";
 function Card() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("/announces.json").then((response) => setData(response.data));
+    axios.get("./data/announces.json").then((response) => setData(response.data));
   }, []);
   return (
     <div className="card-list">
