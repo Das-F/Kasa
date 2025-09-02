@@ -18,7 +18,7 @@ const Announces = () => {
   const announce = logementData?.find((a) => a.id === id);
 
   if (loader) {
-    return <div>Loading...</div>;
+    return <div className="loader">Loading...</div>;
   }
 
   if (logementData.length > 0 && !announce) {
