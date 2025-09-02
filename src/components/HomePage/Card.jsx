@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import "./Card.css";
+import announces from "../../data/announces.json";
 
 function Card() {
   const [data, setData] = useState([]);
+
   useEffect(() => {
-    axios.get("./data/announces.json").then((response) => setData(response.data));
+    setData(announces);
   }, []);
+
   return (
     <div className="card-list">
       {data.map((announce) => (
@@ -21,5 +20,3 @@ function Card() {
     </div>
   );
 }
-
-export default Card;
