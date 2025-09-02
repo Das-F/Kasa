@@ -7,7 +7,7 @@ function AboutPage() {
     <>
       <div className="about">
         <div className="about-banner">
-          <img src="/public/images/image-about-Kasa.png" alt="about Kasa" className="about-image" />
+          <img src="/images/image-about-Kasa.png" alt="about Kasa" className="about-image" />
         </div>
         <DropdownBox />
         <h1 className="about-title">Fiabilité</h1>

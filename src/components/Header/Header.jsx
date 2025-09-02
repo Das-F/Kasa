@@ -1,5 +1,5 @@
 import "./Header.css";
-import Logo from "../Logo/Logo.jsx";
+import Logo from "@/components/Logo/Logo.jsx";
 import Navigation from "./Navigation.jsx";
 
 function Header() {

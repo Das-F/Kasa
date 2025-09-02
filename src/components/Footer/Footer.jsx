@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Logo from "../Logo/Logo.jsx";
+import Logo from "@/components/Logo/Logo.jsx";
 function Footer() {
   return (
     <footer className="footer">
