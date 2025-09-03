@@ -2,6 +2,7 @@ import "@/styles/Rental.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import announces from "@/data/announces.json";
+import DropdownBox from "@/components/AboutPage/DropdownBox";
 
 const RentalPage = () => {
   const { id } = useParams();
@@ -31,10 +32,13 @@ const RentalPage = () => {
                 </p>
                 <span className="announce-host-name">{announce.host.name}</span>
               </div>
-              <div className="announce-infos">
-                <p className="announce-equipments">
-                  <strong>Équipements :</strong> {announce.equipments.join(", ")}
-                </p>
+              <div className="announce-dropdowns">
+                <DropdownBox title="Description">
+                  <p className="announce-description">{announce.description}</p>
+                </DropdownBox>
+                <DropdownBox title="Equipements">
+                  <p className="announce-equipments">{announce.equipments.join(", ")}</p>
+                </DropdownBox>
               </div>
             </div>
           </div>
