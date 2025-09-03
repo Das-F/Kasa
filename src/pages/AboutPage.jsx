@@ -9,11 +9,10 @@ function AboutPage() {
         <div className="about-banner">
           <img src="/images/image-about-Kasa.png" alt="about Kasa" className="about-image" />
         </div>
-        <DropdownBox />
-        <h1 className="about-title">Fiabilité</h1>
-        <DropdownBox />
-        <DropdownBox />
-        <DropdownBox />
+        <DropdownBox title="Fiabilité" />
+        <DropdownBox title="Respect" />
+        <DropdownBox title="Service" />
+        <DropdownBox title="Sécurité" />
       </div>
     </>
   );
