@@ -2,6 +2,7 @@ import "@/styles/Rental.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import announces from "@/data/announces.json";
+import Stars from "@/components/RentalPage/StarRating.jsx";
 import DropdownBox from "@/components/AboutPage/DropdownBox";
 
 const RentalPage = () => {
@@ -22,15 +23,13 @@ const RentalPage = () => {
               <img src={announce.cover} alt={announce.title} className="announce-cover" />
               <h3 className="announce-title">{announce.title}</h3>
               <p className="announce-location">{announce.location}</p>
-              <p className="announce-description">{announce.description}</p>
-              <p className="announce-tags">
-                <strong>Tags :</strong> {announce.tags.join(", ")}
-              </p>
+              <p className="announce-tags">{announce.tags.join(" ")}</p>
               <div className="announce-rating-host">
-                <p className="announce-rating">
-                  <strong>Note :</strong> {announce.rating}
-                </p>
-                <span className="announce-host-name">{announce.host.name}</span>
+                <Stars className="announce-rating" rating={announce.rating} />
+                <div className="announce-host-information">
+                  <span className="announce-host-name">{announce.host.name}</span>
+                  <img src={announce.host.picture} alt={announce.host.name} className="announce-host-picture" />
+                </div>
               </div>
               <div className="announce-dropdowns">
                 <DropdownBox title="Description">

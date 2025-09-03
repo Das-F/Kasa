@@ -55,10 +55,23 @@
   margin: 0;
 }
 
-.announce-host {
+.announce-rating-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 0px 5px;
+}
+
+.announce-host-information {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  gap: 10px;
+}
+
+.announce-host-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .announce-equipments,
