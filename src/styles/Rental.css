@@ -66,6 +66,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #ff6060;
 }
 
 .announce-host-picture {
@@ -74,9 +75,9 @@
   border-radius: 50%;
 }
 
-.announce-equipments,
 .announce-tags {
-  font-size: 0.9rem;
-  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 5px 0;
 }
