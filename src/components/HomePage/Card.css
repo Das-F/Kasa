@@ -6,20 +6,31 @@
 }
 
 .card-announce {
-  width: 270px;
+  width: 285px;
   height: 200px;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  background: linear-gradient(to bottom, var(--color-1, #ff6060) 60%, #040404 167%);
 }
 
 .card-cover {
   width: 100%;
-  height: 160px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.5) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .card-title {
@@ -27,7 +38,7 @@
   font-size: 18px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  margin: 8px;
+  margin: 5px;
   width: 90%;
   display: block;
   text-align: left;
