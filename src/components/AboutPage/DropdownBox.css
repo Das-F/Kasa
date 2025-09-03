@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .dropdown-box h1 {
@@ -16,4 +17,32 @@
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   margin: 0;
+}
+
+.dropdown {
+  margin: 10px 0;
+}
+
+.dropdown-content {
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+.open {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
+}
+
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.arrow-wrapper.rotated {
+  transform: rotate(-180deg);
 }

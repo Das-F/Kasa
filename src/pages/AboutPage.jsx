@@ -1,6 +1,5 @@
 import "../styles/AboutPage.css";
 import DropdownBox from "../components/AboutPage/DropdownBox.jsx";
-import DropdownArrow from "../components/AboutPage/DropdownArrow.jsx";
 
 function AboutPage() {
   return (
