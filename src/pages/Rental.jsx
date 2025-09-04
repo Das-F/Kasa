@@ -5,6 +5,7 @@ import announces from "@/data/announces.json";
 import Tag from "@/components/RentalPage/Tag.jsx";
 import Stars from "@/components/RentalPage/StarRating.jsx";
 import DropdownBox from "@/components/AboutPage/DropdownBox";
+import Slideshow from "@/components/RentalPage/Slideshow";
 
 const RentalPage = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const RentalPage = () => {
           <div className="announce-card-link">
             <div className="announce-card">
               <img src={announce.cover} alt={announce.title} className="announce-cover" />
+              {/* <Slideshow images={announce.pictures} className="announce-slideshow" /> */}
               <h3 className="announce-title">{announce.title}</h3>
               <p className="announce-location">{announce.location}</p>
               <div className="announce-tags">
@@ -41,7 +43,13 @@ const RentalPage = () => {
                   <p className="announce-description">{announce.description}</p>
                 </DropdownBox>
                 <DropdownBox title="Equipements">
-                  <p className="announce-equipments">{announce.equipments.join(", ")}</p>
+                  <ul className="equipments-list">
+                    {announce.equipments.map((eq) => (
+                      <li className="announce-equipment" key={eq}>
+                        {eq}
+                      </li>
+                    ))}
+                  </ul>
                 </DropdownBox>
               </div>
             </div>
