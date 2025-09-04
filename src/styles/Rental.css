@@ -64,8 +64,9 @@
 
 .announce-host-information {
   display: flex;
+  width: 120px;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
   color: #ff6060;
 }
 
