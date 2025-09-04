@@ -3,6 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: transparent;
 }
 
 .card-announce {
@@ -50,4 +51,24 @@
 .card-link {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: 768px) {
+  .card-list {
+    background-color: #f6f6f6;
+    max-width: 1074px;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .card-announce {
+    width: 340px;
+    height: 340px;
+  }
+
+  .card-overlay {
+    width: 340px;
+    height: 340px;
+  }
 }
