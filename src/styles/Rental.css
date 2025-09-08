@@ -92,3 +92,29 @@
   gap: 8px;
   margin: 5px 0;
 }
+
+@media (width >= 768px) {
+  .announce-info-and-host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .announce-rating-host {
+    width: 95%;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .announce-dropdowns {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .dropdown-box {
+    max-width: 65%;
+  }
+}

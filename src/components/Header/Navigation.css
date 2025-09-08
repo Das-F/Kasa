@@ -33,3 +33,16 @@
   text-decoration: underline;
   color: #000;
 }
+
+@media (width >= 768px) {
+  .nav {
+    justify-content: flex-end;
+    margin-right: 60px;
+    width: auto;
+  }
+  .nav li {
+    text-transform: none;
+    font-size: 18px;
+    margin: 0 15px;
+  }
+}

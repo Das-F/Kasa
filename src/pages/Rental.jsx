@@ -24,18 +24,22 @@ const RentalPage = () => {
             <div className="announce-card">
               <img src={announce.cover} alt={announce.title} className="announce-cover" />
               {/* <Slideshow images={announce.pictures} className="announce-slideshow" /> */}
-              <h3 className="announce-title">{announce.title}</h3>
-              <p className="announce-location">{announce.location}</p>
-              <div className="announce-tags">
-                {announce.tags.map((tag) => (
-                  <Tag key={tag} text={tag} />
-                ))}
-              </div>
-              <div className="announce-rating-host">
-                <Stars className="announce-rating" rating={announce.rating} />
-                <div className="announce-host-information">
-                  <span className="announce-host-name">{announce.host.name}</span>
-                  <img src={announce.host.picture} alt={announce.host.name} className="announce-host-picture" />
+              <div className="announce-info-and-host">
+                <div className="announce-information">
+                  <h3 className="announce-title">{announce.title}</h3>
+                  <p className="announce-location">{announce.location}</p>
+                  <div className="announce-tags">
+                    {announce.tags.map((tag) => (
+                      <Tag key={tag} text={tag} />
+                    ))}
+                  </div>
+                </div>
+                <div className="announce-rating-host">
+                  <Stars className="announce-rating" rating={announce.rating} />
+                  <div className="announce-host-information">
+                    <span className="announce-host-name">{announce.host.name}</span>
+                    <img src={announce.host.picture} alt={announce.host.name} className="announce-host-picture" />
+                  </div>
                 </div>
               </div>
               <div className="announce-dropdowns">

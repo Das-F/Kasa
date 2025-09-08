@@ -54,7 +54,7 @@
   color: inherit;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .card-list {
     background-color: #f6f6f6;
     max-width: 100%;

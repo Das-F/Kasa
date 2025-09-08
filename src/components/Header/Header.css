@@ -3,8 +3,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 15px;
+  width: 90%;
+  margin: 0px 5px 15px 5px;
 }
 .logo-header {
   display: flex;
@@ -14,10 +14,11 @@
   margin: 18px;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .header {
-    margin: 20px 60px;
+    margin: 20px auto 20px auto;
   }
+
   .logo-header {
     max-width: 120px;
   }
