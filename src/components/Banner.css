@@ -32,17 +32,3 @@
   color: #ffffff;
   text-align: left;
 }
-
-.cards-list {
-  display: flex;
-  width: 90%;
-  max-width: 1440px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 0 auto 50px auto;
-}
-
-@media (width >= 768px) {
-}

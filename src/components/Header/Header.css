@@ -1,14 +1,12 @@
 .header {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin: 0px 5px 15px 5px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 .logo-header {
-  display: flex;
-  justify-content: flex-start;
+  display: block;
   max-width: 130px;
   height: auto;
   margin: 18px;
@@ -16,10 +14,7 @@
 
 @media (width >= 768px) {
   .header {
-    margin: 20px auto 20px auto;
-  }
-
-  .logo-header {
-    max-width: 120px;
+    width: 90%;
+    text-decoration: none;
   }
 }
