@@ -1,33 +1,12 @@
-.banner {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 90%;
-  height: 100px;
-  margin: 20px auto;
-  border-radius: 10px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-.banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
 .banner-title {
-  position: relative;
-  z-index: 2;
-  margin: 20px;
-  width: 65%;
-  font-size: 22px;
+  position: absolute;
+  left: 0%;
+  top: 15%;
+  z-index: 100;
+  width: 60%;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.1;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   text-align: left;
@@ -41,8 +20,16 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 0 auto 50px auto;
+  margin: 18px auto 50px auto;
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
+  .banner-title {
+    font-size: 35px;
+    width: 100%;
+    top: 28%;
+    text-align: center;
+
+    -webkit-text-stroke: 1px black;
+  }
 }

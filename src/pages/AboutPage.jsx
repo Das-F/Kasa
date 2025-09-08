@@ -1,14 +1,13 @@
 import "../styles/AboutPage.css";
 import DropdownBox from "../components/AboutPage/DropdownBox.jsx";
 import aboutImg from "../assets/images/image-about-Kasa.png";
+import Banner from "@/components/Banner";
 
 function AboutPage() {
   return (
     <>
       <div className="about">
-        <div className="about-banner">
-          <img src={aboutImg} alt="about Kasa" className="about-image" />
-        </div>
+        <Banner image={aboutImg} />
         <DropdownBox title="Fiabilité">
           <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
         </DropdownBox>
