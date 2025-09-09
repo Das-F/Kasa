@@ -1,10 +1,10 @@
 import "@/components/Banner.css";
 
-function Banner({ image, title, className = "", children }) {
+function Banner({ image, title, className = "" }) {
   return (
     <div className={`banner ${className}`}>
-      <img src={image} alt={title || "banner"} className="banner-image" />
-      {children ? <div className="banner-content">{children}</div> : <h1 className="banner-title">{title}</h1>}
+      <img src={image} alt={title || ""} className="banner-image" />
+      {title && <h1 className="banner-title">{title}</h1>}
     </div>
   );
 }
