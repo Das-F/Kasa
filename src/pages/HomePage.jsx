@@ -6,9 +6,7 @@ import Banner from "@/components/Banner";
 function HomePage() {
   return (
     <>
-      <Banner image={HomepageImg}>
-        <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
-      </Banner>
+      <Banner image={HomepageImg} title={"Chez vous, partout et ailleurs"} className={"banner-dark"} />
       <div className="cards-list">
         <Card />
       </div>

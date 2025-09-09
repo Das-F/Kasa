@@ -14,13 +14,19 @@
   object-fit: cover;
   border-radius: 10px;
 }
-
 .banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
+}
+
+.banner-light::after {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-dark::after {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 @media (width >= 768px) {
