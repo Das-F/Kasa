@@ -19,7 +19,7 @@ function Slideshow({ images, className }) {
     <div className={`slideshow-wrapper ${className || ""}`}>
       <DropdownArrow className="previous-arrow" onClick={prevSlide} />
       <div className="slideshow">
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+        <img className="slideshow-image" src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
       </div>
       <DropdownArrow className="next-arrow" onClick={nextSlide} />
     </div>

@@ -22,7 +22,7 @@ const RentalPage = () => {
         {announce && (
           <div className="announce-card-link">
             <div className="announce-card">
-              <img src={announce.cover} alt={announce.title} className="announce-cover" />
+              {/* <img src={announce.cover} alt={announce.title} className="announce-cover" /> */}
               <Slideshow images={announce.pictures} className="announce-slideshow" />
               <div className="announce-info-and-host">
                 <div className="announce-information">

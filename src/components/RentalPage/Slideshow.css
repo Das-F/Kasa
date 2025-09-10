@@ -1,24 +1,35 @@
 .slideshow-wrapper {
   position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto 5px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .previous-arrow,
 .next-arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 75px;
-  height: 100px;
-  padding: 10px;
+  top: 42%;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   z-index: 2;
 }
 .previous-arrow {
-  left: 10px;
+  left: 5px;
 }
 
 .next-arrow {
-  right: 10px;
+  right: 5px;
 }
 
 .previous-arrow .dropdown-arrow,
@@ -32,4 +43,18 @@
 }
 .next-arrow {
   transform: rotate(90deg);
+}
+
+@media (width >= 768px) {
+  .slideshow-wrapper {
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+
+  .previous-arrow,
+  .next-arrow {
+    width: 50px;
+    height: 35px;
+    padding: 20px;
+  }
 }
