@@ -34,7 +34,7 @@
   font-size: 18px;
   color: #ff6060;
   text-align: left;
-  margin: 0;
+  margin: 5px 0px;
 }
 
 .announce-location {
@@ -60,9 +60,10 @@
 
 .announce-rating-host {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 25%;
   align-items: center;
-  margin: 10px 0px 15px 5px;
+  margin: 10px 5px 15px 5px;
 }
 
 .announce-host-information {
@@ -87,6 +88,10 @@
 }
 
 @media (width >= 768px) {
+  .announce-card {
+    padding: 20px 30px;
+  }
+
   .announce-info-and-host {
     display: flex;
     flex-direction: row;
