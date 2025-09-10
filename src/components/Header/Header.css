@@ -16,5 +16,6 @@
   .header {
     width: 90%;
     text-decoration: none;
+    margin: 0 auto 20px auto;
   }
 }
