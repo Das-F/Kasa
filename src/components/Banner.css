@@ -32,5 +32,6 @@
 @media (width >= 768px) {
   .banner {
     height: 170px;
+    border-radius: 20px;
   }
 }
