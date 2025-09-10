@@ -43,10 +43,10 @@ const RentalPage = () => {
                 </div>
               </div>
               <div className="announce-dropdowns">
-                <DropdownBox title="Description">
+                <DropdownBox className="dropdown-box-twice" title="Description">
                   <p className="announce-description">{announce.description}</p>
                 </DropdownBox>
-                <DropdownBox title="Equipements">
+                <DropdownBox className="dropdown-box-twice" title="Equipements">
                   <ul className="equipments-list">
                     {announce.equipments.map((eq) => (
                       <li className="announce-equipment" key={eq}>

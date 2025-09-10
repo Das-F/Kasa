@@ -113,8 +113,4 @@
     justify-content: space-evenly;
     gap: 10px;
   }
-
-  .dropdown-box {
-    max-width: 65%;
-  }
 }
