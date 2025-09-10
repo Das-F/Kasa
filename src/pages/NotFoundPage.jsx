@@ -8,10 +8,7 @@ function NotFoundPage() {
     <>
       <div className="not-found">
         <CodeError className="code-error" alt="Error 404" fillColor="#FF6060" />
-        <h1>
-          Oups! La page que <br />
-          vous demandez n'existe pas.
-        </h1>
+        <h1>Oups! La page que vous demandez n'existe pas.</h1>
       </div>
       <div className="return-home">
         <Link to="/">Retourner sur la page d'accueil</Link>
