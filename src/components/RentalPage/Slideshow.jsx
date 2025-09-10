@@ -1,20 +1,27 @@
-import "./Slideshow.css";
+import { useState } from "react";
 import DropdownArrow from "../AboutPage/DropdownArrow.jsx";
+import "./Slideshow.css";
 
-function Slideshow({ images }) {
-  if (!images || images.length === 0) {
-    return null;
-  }
+function Slideshow({ images, className }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (!images || images.length === 0) return null;
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
 
   return (
-    <div className="slideshow-wrapper">
-      <DropdownArrow className="previous-arrow" />
+    <div className={`slideshow-wrapper ${className || ""}`}>
+      <DropdownArrow className="previous-arrow" onClick={prevSlide} />
       <div className="slideshow">
-        {images.map((image, index) => (
-          <img key={index} src={image} alt={`Slide ${index}`} />
-        ))}
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
       </div>
-      <DropdownArrow className="next-arrow" />
+      <DropdownArrow className="next-arrow" onClick={nextSlide} />
     </div>
   );
 }
