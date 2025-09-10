@@ -8,6 +8,20 @@
   overflow: hidden;
 }
 
+.banner-title {
+  position: absolute;
+  left: 0%;
+  top: 15%;
+  z-index: 100;
+  width: 60%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: left;
+}
+
 .banner-image {
   width: 100%;
   height: 100%;
@@ -34,5 +48,12 @@
     height: 170px;
     border-radius: 20px;
     margin-bottom: 40px;
+  }
+  .banner-title {
+    font-size: 35px;
+    width: 100%;
+    top: 35%;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 }
