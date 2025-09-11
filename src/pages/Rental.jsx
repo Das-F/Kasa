@@ -15,14 +15,13 @@ const RentalPage = () => {
     if (announces.length > 0 && !announce) {
       navigate("/404");
     }
-  }, [announce, announces.length, navigate]);
+  }, [announce, navigate]);
   return (
     <div className="announces">
       <div className="announces-list">
         {announce && (
           <div className="announce-card-link">
             <div className="announce-card">
-              {/* <img src={announce.cover} alt={announce.title} className="announce-cover" /> */}
               <Slideshow images={announce.pictures} className="announce-slideshow" />
               <div className="announce-info-and-host">
                 <div className="announce-information">
