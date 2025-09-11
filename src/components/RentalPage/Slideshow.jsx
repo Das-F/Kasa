@@ -21,6 +21,7 @@ function Slideshow({ images, className }) {
 
       <div className="slideshow">
         <img className="slideshow-image" src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+
         {images.length > 1 && (
           <div className="slideshow-counter">
             {currentIndex + 1} / {images.length}
