@@ -17,11 +17,18 @@ function Slideshow({ images, className }) {
 
   return (
     <div className={`slideshow-wrapper ${className || ""}`}>
-      <DropdownArrow className="previous-arrow" onClick={prevSlide} />
+      {images.length > 1 && <DropdownArrow className="previous-arrow" onClick={prevSlide} />}
+
       <div className="slideshow">
-        <img className="slideshow-image" src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+        <img className="slideshow-image" src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        {images.length > 1 && (
+          <div className="slideshow-counter">
+            {currentIndex + 1} / {images.length}
+          </div>
+        )}
       </div>
-      <DropdownArrow className="next-arrow" onClick={nextSlide} />
+
+      {images.length > 1 && <DropdownArrow className="next-arrow" onClick={nextSlide} />}
     </div>
   );
 }
