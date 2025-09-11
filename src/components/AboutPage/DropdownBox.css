@@ -58,10 +58,15 @@
 
 @media (width >= 768px) {
 }
+.dropdown-box {
+  height: 42px;
+  padding: 0 15px;
+}
+
 .dropdown-box-twice {
   width: 45%;
 }
 
 .dropdown-box-large {
-  width: 70%;
+  width: 75%;
 }

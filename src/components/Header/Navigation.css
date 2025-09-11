@@ -18,7 +18,7 @@
   color: #000;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
@@ -37,7 +37,7 @@
 @media (width >= 768px) {
   .nav li {
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .nav ul {
