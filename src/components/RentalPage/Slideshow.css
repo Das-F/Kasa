@@ -68,4 +68,10 @@
     height: 35px;
     padding: 20px;
   }
+
+  .slideshow-counter {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
 }
