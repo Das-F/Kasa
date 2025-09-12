@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import announces from "@/data/announces.json";
 import Tag from "@/components/RentalPage/Tag.jsx";
 import Stars from "@/components/RentalPage/StarRating.jsx";
-import DropdownBox from "@/components/AboutPage/DropdownBox";
+import DropdownBox from "@/components/DropdownBox/DropdownBox";
 import Slideshow from "@/components/RentalPage/Slideshow";
 
 const RentalPage = () => {

@@ -2,12 +2,13 @@ import { useState } from "react";
 import "./DropdownBox.css";
 import DropdownArrow from "./DropdownArrow.jsx";
 
-function DropdownBox({ title, children, className }) {
+function DropdownBox({ title, children, className = "", contentClassName = "" }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div className={`dropdown ${className}`}>
       <div className="dropdown-box" onClick={toggleDropdown}>
@@ -17,7 +18,7 @@ function DropdownBox({ title, children, className }) {
         </div>
       </div>
 
-      {isOpen && <div className="dropdown-content">{children}</div>}
+      {isOpen && <div className={`dropdown-content ${contentClassName}`}>{children}</div>}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DropdownArrow from "../AboutPage/DropdownArrow.jsx";
+import DropdownArrow from "../DropdownBox/DropdownArrow.jsx";
 import "./Slideshow.css";
 
 function Slideshow({ images, className }) {

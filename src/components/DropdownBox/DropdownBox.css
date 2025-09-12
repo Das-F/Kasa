@@ -57,6 +57,10 @@
   transform: rotate(-180deg);
 }
 
+.about-content {
+  height: auto;
+}
+
 @media (width >= 768px) {
   .dropdown-box {
     height: 40px;
